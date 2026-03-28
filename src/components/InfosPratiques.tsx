@@ -1,7 +1,6 @@
 "use client";
 
 import { MapPin, Clock, Phone, ParkingCircle, Accessibility } from "lucide-react";
-import PlaceholderImage from "./PlaceholderImage";
 
 const horairesListe = [
   { jour: "Lundi - Vendredi", heures: "08:30 — 19:00", jours: [1, 2, 3, 4, 5] },
@@ -95,8 +94,9 @@ export default function InfosPratiques() {
 
         {/* Droite — Carte */}
         <div className="min-h-[450px] bg-surface-container rounded-[3rem] overflow-hidden relative shadow-inner">
-          <PlaceholderImage
-            label="carte-uzes — carte illustrée Uzès centre-ville"
+          <img
+            src="/images/carte-uzes.png"
+            alt="Carte Uzès centre-ville — localisation cabinet"
             className="w-full h-full object-cover grayscale opacity-60 absolute inset-0"
           />
           <div className="absolute inset-0 flex items-center justify-center">

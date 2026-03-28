@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { getStatutCabinet } from "@/lib/horaires";
-import PlaceholderImage from "./PlaceholderImage";
 
 export default function FloatingBadge() {
   const [statut, setStatut] = useState(getStatutCabinet());
@@ -19,7 +18,11 @@ export default function FloatingBadge() {
       {/* Avatar */}
       <div className="relative">
         <div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
-          <PlaceholderImage label="Dr" className="w-full h-full" />
+          <img
+            src="/images/portrait-medecin.png"
+            alt="Dr. Sophie Mercier"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div
           className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-white animate-pulse ${

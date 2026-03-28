@@ -1,4 +1,3 @@
-import PlaceholderImage from "./PlaceholderImage";
 import { BadgeHorairesHero } from "./BadgeHoraires";
 
 export default function Hero() {
@@ -38,9 +37,10 @@ export default function Hero() {
         {/* Droite */}
         <div className="relative h-[700px] w-full hidden md:block">
           <div className="absolute inset-0 bg-primary-container/5 rounded-3xl -rotate-2 transform scale-105" />
-          <PlaceholderImage
-            label="portrait-medecin — femme m&eacute;decin souriante, cabinet lumineux"
-            className="relative h-full w-full object-cover rounded-3xl shadow-2xl"
+          <img
+            src="/images/portrait-medecin.png"
+            alt="Dr. Sophie Mercier — médecin généraliste à Uzès"
+            className="relative h-full w-full object-cover rounded-3xl shadow-2xl object-[50%_20%]"
           />
         </div>
       </div>

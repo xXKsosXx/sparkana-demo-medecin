@@ -1,5 +1,3 @@
-import PlaceholderImage from "./PlaceholderImage";
-
 export default function Medecin() {
   return (
     <section id="medecin" className="py-32 bg-surface">
@@ -7,9 +5,10 @@ export default function Medecin() {
         {/* Gauche — Photo */}
         <div className="w-full md:w-1/2 relative">
           <div className="aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl">
-            <PlaceholderImage
-              label="portrait-medecin — Dr Mercier femme médecin 45 ans, lunettes, stéthoscope"
-              className="w-full h-full"
+            <img
+              src="/images/portrait-medecin.png"
+              alt="Dr. Sophie Mercier — portrait"
+              className="w-full h-full object-cover"
             />
           </div>
 
